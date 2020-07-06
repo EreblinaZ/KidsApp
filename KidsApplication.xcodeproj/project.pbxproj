@@ -14,6 +14,7 @@
 		2232AF6424B1FA0500BFAB5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2232AF6224B1FA0500BFAB5C /* LaunchScreen.storyboard */; };
 		2232AF6F24B1FA0500BFAB5C /* KidsApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232AF6E24B1FA0500BFAB5C /* KidsApplicationTests.swift */; };
 		2232AF7A24B1FA0500BFAB5C /* KidsApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232AF7924B1FA0500BFAB5C /* KidsApplicationUITests.swift */; };
+		2232AF8824B1FD2800BFAB5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232AF8724B1FD2800BFAB5C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2232AF7524B1FA0500BFAB5C /* KidsApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2232AF7924B1FA0500BFAB5C /* KidsApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsApplicationUITests.swift; sourceTree = "<group>"; };
 		2232AF7B24B1FA0500BFAB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2232AF8724B1FD2800BFAB5C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2232AF6024B1FA0500BFAB5C /* Assets.xcassets */,
 				2232AF6224B1FA0500BFAB5C /* LaunchScreen.storyboard */,
 				2232AF6524B1FA0500BFAB5C /* Info.plist */,
+				2232AF8724B1FD2800BFAB5C /* HomeViewController.swift */,
 			);
 			path = KidsApplication;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				2232AF5C24B1FA0500BFAB5C /* ViewController.swift in Sources */,
 				2232AF5A24B1FA0500BFAB5C /* AppDelegate.swift in Sources */,
+				2232AF8824B1FD2800BFAB5C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
