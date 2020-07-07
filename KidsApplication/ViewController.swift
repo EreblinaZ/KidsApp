@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var alphabetImage: UIImageView!
     
     @IBOutlet weak var email: UITextField!
     
@@ -35,6 +36,22 @@ class ViewController: UIViewController {
                 alert.addAction(UIAlertAction(title:"OK", style: .default, handler:nil))
                 
                 self.present(alert, animated: true,completion: nil)
+            
+        }
+        
+    }
+    
+   
+    @IBAction func alphabetSegmentController(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            alphabetImage.image=UIImage(named: "alphabet1")!
+        case 1:
+            alphabetImage.image=UIImage(named: "consonants")!
+        case 2:
+            alphabetImage.image=UIImage(named: "vowels")!
+        default:
+            break;
             
         }
     }
