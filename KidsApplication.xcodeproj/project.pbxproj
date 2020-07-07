@@ -15,6 +15,7 @@
 		2232AF6F24B1FA0500BFAB5C /* KidsApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232AF6E24B1FA0500BFAB5C /* KidsApplicationTests.swift */; };
 		2232AF7A24B1FA0500BFAB5C /* KidsApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232AF7924B1FA0500BFAB5C /* KidsApplicationUITests.swift */; };
 		2232AF8824B1FD2800BFAB5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232AF8724B1FD2800BFAB5C /* HomeViewController.swift */; };
+		22F1B76B24B4EDC000362196 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1B76A24B4EDC000362196 /* StoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2232AF7924B1FA0500BFAB5C /* KidsApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsApplicationUITests.swift; sourceTree = "<group>"; };
 		2232AF7B24B1FA0500BFAB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2232AF8724B1FD2800BFAB5C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		22F1B76A24B4EDC000362196 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2232AF6224B1FA0500BFAB5C /* LaunchScreen.storyboard */,
 				2232AF6524B1FA0500BFAB5C /* Info.plist */,
 				2232AF8724B1FD2800BFAB5C /* HomeViewController.swift */,
+				22F1B76A24B4EDC000362196 /* StoryViewController.swift */,
 			);
 			path = KidsApplication;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F1B76B24B4EDC000362196 /* StoryViewController.swift in Sources */,
 				2232AF5C24B1FA0500BFAB5C /* ViewController.swift in Sources */,
 				2232AF5A24B1FA0500BFAB5C /* AppDelegate.swift in Sources */,
 				2232AF8824B1FD2800BFAB5C /* HomeViewController.swift in Sources */,
