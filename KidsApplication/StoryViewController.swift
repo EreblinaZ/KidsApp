@@ -78,7 +78,6 @@ class StoryViewController: UIViewController {
             return
         }
         
-        print("Everything is fine")
     }
 
     override func didReceiveMemoryWarning() {
