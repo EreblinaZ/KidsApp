@@ -15,6 +15,46 @@
         </array>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="f0g-ga-LF9">
+            <objects>
+                <viewController id="ZQi-fp-09j" customClass="ViewController" customModule="KidsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bzn-Gp-vBa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-100" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="UET-Uv-yed">
+                                <rect key="frame" x="143" y="521" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="jb:" destination="Rgh-9p-zFL" eventType="valueChanged" id="FoC-j7-xvo"/>
+                                    <action selector="stepper:" destination="ZQi-fp-09j" eventType="valueChanged" id="5mh-hR-cdM"/>
+                                </connections>
+                            </stepper>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="counting" translatesAutoresizingMaskIntoConstraints="NO" id="FUR-lj-zrY">
+                                <rect key="frame" x="0.0" y="94" width="375" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35A-PF-gi8">
+                                <rect key="frame" x="140" y="401" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="1si-nI-RWz"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblNum" destination="35A-PF-gi8" id="wPZ-LL-EHK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVc-Sl-CWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Rgh-9p-zFL" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="-546.47676161919048"/>
+        </scene>
         <!--Kids Application-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -249,6 +289,14 @@
                                     <segue destination="4Yf-5S-dmP" kind="show" id="cr2-4q-apI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hew-42-2cY">
+                                <rect key="frame" x="230" y="249" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="app_numbers"/>
+                                <connections>
+                                    <segue destination="ZQi-fp-09j" kind="show" id="dls-0C-PYR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.97999999999999998" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="4G0-Wd-oo3"/>
@@ -257,6 +305,7 @@
                         <segue destination="jXX-SZ-JFi" kind="show" id="rKS-kN-Peo"/>
                         <segue destination="92U-HO-b8D" kind="show" id="aJu-xm-RiR"/>
                         <segue destination="4Yf-5S-dmP" kind="show" id="XrB-aU-QiF"/>
+                        <segue destination="ZQi-fp-09j" kind="show" id="k7M-mh-NK1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmH-fh-zhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -324,11 +373,14 @@
         <image name="app_alphabet" width="418" height="426"/>
         <image name="app_colors" width="414" height="435"/>
         <image name="app_logo" width="218" height="188"/>
+        <image name="app_numbers" width="435" height="442"/>
         <image name="app_stories" width="388" height="398"/>
+        <image name="counting" width="800" height="772"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lBG-HG-bmM"/>
         <segue reference="XrB-aU-QiF"/>
         <segue reference="vLV-Np-YnA"/>
+        <segue reference="k7M-mh-NK1"/>
     </inferredMetricsTieBreakers>
 </document>

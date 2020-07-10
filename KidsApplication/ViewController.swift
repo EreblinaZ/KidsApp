@@ -16,6 +16,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var password: UITextField!
     
+    @IBOutlet var lblNum: UILabel!
+    
+    @IBAction func stepper(_ sender: UIStepper) {
+        lblNum.text=String(Int(sender.value))
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.        
